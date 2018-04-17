@@ -1,7 +1,7 @@
 public class Rock extends Piece{
     String name;
 
-    @Override public boolean isValidMove(Position newPosition){
+    public boolean isValidMove(Position newPosition){
         // First call the parent's method to check for the board bounds
         if(!super.isValidMove(newPosition)){
             return false;
